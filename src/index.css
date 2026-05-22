@@ -5801,3 +5801,220 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
+
+/* Mobile polish for deployed phone layouts */
+@media (max-width: 640px) {
+  html,
+  body,
+  .site-shell {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 14px;
+    padding: max(16px, env(safe-area-inset-top)) 18px 18px;
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.62) 74%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .brand {
+    order: 1;
+  }
+
+  .brand img {
+    width: 86px;
+    height: 86px;
+  }
+
+  .navbar-actions {
+    order: 2;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .language-switcher {
+    margin-top: 0;
+  }
+
+  .language-switcher button {
+    width: 46px;
+    height: 36px;
+  }
+
+  .cart-nav-button {
+    width: 46px;
+    height: 46px;
+    margin-top: 0;
+  }
+
+  .primary-nav {
+    order: 3;
+    width: min(100%, 390px);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px 12px;
+    justify-content: center;
+  }
+
+  .primary-nav button {
+    width: 100%;
+    min-height: 38px;
+    padding: 7px 6px;
+    font-size: 0.76rem;
+    letter-spacing: 0.035em;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .hero-section {
+    min-height: 100svh;
+    height: auto;
+    align-items: flex-start;
+    padding: 355px 22px 80px;
+    background-position: 70% center;
+  }
+
+  .hero-content {
+    width: 100%;
+    transform: none;
+  }
+
+  .hero-title-block h1 {
+    font-size: clamp(4.6rem, 22vw, 6.2rem);
+    line-height: 0.86;
+  }
+
+  .hero-script {
+    font-size: clamp(3.1rem, 16vw, 4.6rem);
+    line-height: 0.78;
+    margin: -8px 0 0 4px;
+  }
+
+  .hero-rule {
+    width: 100%;
+    margin: 34px 0 32px;
+  }
+
+  .hero-title-block > p:not(.eyebrow) {
+    font-size: clamp(1.45rem, 7vw, 2rem);
+    line-height: 1.45;
+  }
+
+  .hero-actions button {
+    width: 100%;
+    min-height: 58px;
+    padding-inline: 18px;
+    font-size: 0.82rem;
+  }
+
+  .wines-catalog-shell {
+    padding: 345px 22px 72px;
+  }
+
+  .wines-catalog-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 36px;
+    margin-bottom: 34px;
+  }
+
+  .wines-catalog-copy h1 {
+    font-size: clamp(3.25rem, 16vw, 4.5rem);
+    line-height: 0.95;
+  }
+
+  .wines-catalog-copy > p:not(.eyebrow) {
+    font-size: 1.28rem;
+    line-height: 1.45;
+  }
+
+  .filter-group {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .filter-group > button {
+    width: 100%;
+    min-height: 52px;
+    padding: 11px 10px;
+    font-size: 0.78rem;
+  }
+
+  .filter-group > button:first-child,
+  .filter-group > button.availability-filter {
+    grid-column: span 2;
+  }
+
+  .filter-selects {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .wine-dropdown-trigger {
+    min-height: 72px;
+    padding: 14px 18px;
+  }
+
+  .wine-catalog-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .wine-detail-panel {
+    margin-top: 30px;
+    padding: 18px;
+  }
+
+  .cart-drawer {
+    width: 100vw;
+    padding: 150px 24px 28px;
+  }
+
+  .producers-hero,
+  .regions-editorial-hero,
+  .experience-hero,
+  .about-hero,
+  .contact-hero {
+    min-height: auto;
+    padding: 345px 22px 78px;
+  }
+
+  .producers-side-note {
+    display: none;
+  }
+
+  .producers-hero-copy {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .producers-hero h1,
+  .regions-editorial-hero h1,
+  .experience-hero-copy h1,
+  .about-hero h1,
+  .contact-hero h1 {
+    font-size: clamp(3.3rem, 15vw, 4.7rem);
+    line-height: 0.96;
+  }
+
+  .producers-hero p:not(.eyebrow),
+  .regions-editorial-hero p:not(.eyebrow),
+  .experience-hero-copy p:not(.eyebrow),
+  .about-hero p:not(.eyebrow),
+  .contact-hero p:not(.eyebrow) {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  .producers-hero-quote {
+    margin-top: 34px;
+  }
+}
