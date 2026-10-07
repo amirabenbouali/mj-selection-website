@@ -7,7 +7,7 @@ const navItems = [
   'regions',
   'experience',
   'about',
-  'contact',
+  'access',
 ]
 
 function Navbar({ activePage, cartCount = 0, cartLabel = 'Open selection', copy, language, onCartOpen, onLanguageChange, onNavigate }) {

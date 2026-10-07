@@ -8,7 +8,7 @@ import Producers from './pages/Producers.jsx'
 import Regions from './pages/Regions.jsx'
 import Experience from './pages/Experience.jsx'
 import About from './pages/About.jsx'
-import Contact from './pages/Contact.jsx'
+import Access from './pages/Access.jsx'
 import { defaultLanguage, translations } from './data/translations.js'
 import './index.css'
 
@@ -19,11 +19,15 @@ const pages = {
   regions: Regions,
   experience: Experience,
   about: About,
-  contact: Contact,
+  access: Access,
+  contact: Access,
 }
 
 function getInitialPage() {
   const hashPage = window.location.hash.replace('#', '')
+  if (hashPage === 'contact') {
+    return 'access'
+  }
   return pages[hashPage] ? hashPage : 'home'
 }
 
@@ -80,7 +84,7 @@ function App() {
 
   function handleCheckout() {
     setIsCartOpen(false)
-    handleNavigate('contact')
+    handleNavigate('access')
   }
 
   return (

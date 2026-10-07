@@ -294,8 +294,8 @@ function Wines({ copy, onAddToSelection }) {
               </dl>
             </div>
             <aside className="wine-purchase-panel">
-              <strong>€{selectedWine.price.toFixed(2)}</strong>
-              <span>{shopCopy.taxIncluded}</span>
+              <strong>{shopCopy.taxIncluded}</strong>
+              <span>{shopCopy.requestOnly}</span>
               <p className={selectedWine.available ? 'available' : ''}>
                 {selectedWine.available ? shopCopy.availableNow : shopCopy.requestOnly}
               </p>

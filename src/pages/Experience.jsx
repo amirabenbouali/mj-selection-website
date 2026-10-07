@@ -104,7 +104,7 @@ function Experience({ copy, onNavigate }) {
           <motion.button
             className="experience-button"
             type="button"
-            onClick={() => onNavigate('contact')}
+            onClick={() => onNavigate('access')}
             variants={staggerItem}
           >
             {page.action}
@@ -200,7 +200,7 @@ function Experience({ copy, onNavigate }) {
         <div>
           <h2>{page.cta.title}</h2>
           <p>{page.cta.body}</p>
-          <button className="experience-button" type="button" onClick={() => onNavigate('contact')}>
+          <button className="experience-button" type="button" onClick={() => onNavigate('access')}>
             {page.cta.action}
             <span aria-hidden="true">→</span>
           </button>

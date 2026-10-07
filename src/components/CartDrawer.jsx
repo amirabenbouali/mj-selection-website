@@ -1,6 +1,4 @@
 function CartDrawer({ copy, isOpen, items, onCheckout, onClose, onQuantityChange, onRemove }) {
-  const subtotal = items.reduce((sum, item) => sum + item.wine.price * item.quantity, 0)
-
   return (
     <div className={`cart-drawer-shell ${isOpen ? 'open' : ''}`} aria-hidden={!isOpen}>
       <button className="cart-drawer-backdrop" type="button" onClick={onClose} tabIndex={isOpen ? 0 : -1} />
@@ -22,7 +20,7 @@ function CartDrawer({ copy, isOpen, items, onCheckout, onClose, onQuantityChange
                 <div>
                   <h3>{item.wine.name}</h3>
                   <p>{item.wine.producer}</p>
-                  <strong>€{item.wine.price.toFixed(2)}</strong>
+                  <strong>{copy.requestOnly}</strong>
                   <div className="quantity-control">
                     <button type="button" onClick={() => onQuantityChange(item.wine.id, item.quantity - 1)}>
                       −
@@ -44,7 +42,7 @@ function CartDrawer({ copy, isOpen, items, onCheckout, onClose, onQuantityChange
         <div className="cart-drawer-footer">
           <div className="cart-subtotal">
             <span>{copy.subtotal}</span>
-            <strong>€{subtotal.toFixed(2)}</strong>
+            <strong>{copy.taxIncluded}</strong>
           </div>
           <p>{copy.deliveryNote}</p>
           <button className="cart-primary" type="button" onClick={onCheckout}>

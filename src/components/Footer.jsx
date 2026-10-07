@@ -5,7 +5,7 @@ function Footer({ copy, onNavigate }) {
         <strong>MJ Selection</strong>
         <p>{copy.body}</p>
       </div>
-      <button type="button" onClick={() => onNavigate('contact')}>
+      <button type="button" onClick={() => onNavigate('access')}>
         {copy.contact}
       </button>
     </footer>

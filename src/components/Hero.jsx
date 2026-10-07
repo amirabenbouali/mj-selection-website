@@ -56,7 +56,7 @@ function Hero({ copy, onNavigate }) {
             animate="visible"
             variants={delayedFadeUp(0.5)}
           >
-            <button type="button" onClick={() => onNavigate('wines')}>
+            <button type="button" onClick={() => onNavigate('access')}>
               {copy.primaryAction}
             </button>
           </motion.div>

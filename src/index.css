@@ -5168,6 +5168,250 @@ dd {
   transform: translateY(-2px);
 }
 
+.access-contact-page .contact-main {
+  align-items: start;
+}
+
+.access-request-form .eyebrow {
+  color: var(--wine);
+  margin-bottom: 0;
+}
+
+.access-request-form .access-profile-options {
+  margin-bottom: 4px;
+}
+
+.access-request-form .access-profile-options span {
+  border-color: rgba(200, 162, 74, 0.42);
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.access-request-form .access-profile-options input:checked + span {
+  background: rgba(200, 162, 74, 0.18);
+  color: #8c6822;
+}
+
+.access-request-form small {
+  color: rgba(28, 22, 16, 0.58);
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+
+.access-page {
+  min-height: 100vh;
+  background: #080706;
+  color: var(--ivory);
+}
+
+.access-hero {
+  min-height: 68vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 160px clamp(24px, 9vw, 160px) 78px;
+  background:
+    radial-gradient(circle at 16% 42%, rgba(200, 162, 74, 0.16), transparent 28rem),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.75) 46%, rgba(0, 0, 0, 0.38) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.28), #080706 98%),
+    url('/images/wines-hero-cellar-bottles.png') 70% center / cover;
+}
+
+.access-hero-copy {
+  max-width: 760px;
+}
+
+.access-hero .eyebrow,
+.access-main .eyebrow,
+.access-form .eyebrow {
+  color: var(--gold);
+  letter-spacing: 0.16em;
+}
+
+.access-hero h1 {
+  color: var(--warm-white);
+  font-size: clamp(4rem, 8vw, 8.8rem);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  line-height: 0.9;
+  margin: 22px 0 26px;
+  max-width: 900px;
+}
+
+.access-hero-copy > p:not(.eyebrow) {
+  color: rgba(245, 239, 230, 0.82);
+  font-size: clamp(1.25rem, 1.7vw, 1.62rem);
+  line-height: 1.52;
+  max-width: 640px;
+}
+
+.access-main {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.85fr) minmax(420px, 1fr);
+  gap: clamp(42px, 6vw, 94px);
+  padding: clamp(72px, 9vw, 132px) clamp(24px, 9vw, 160px);
+  background:
+    linear-gradient(90deg, rgba(8, 7, 6, 0.96), rgba(8, 7, 6, 0.9)),
+    radial-gradient(circle at 78% 12%, rgba(200, 162, 74, 0.12), transparent 26rem);
+}
+
+.access-intro {
+  max-width: 560px;
+}
+
+.access-intro h2 {
+  color: var(--warm-white);
+  font-size: clamp(2.8rem, 5vw, 5.6rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 0.96;
+  margin: 22px 0 30px;
+}
+
+.access-intro p:not(.eyebrow) {
+  color: rgba(245, 239, 230, 0.72);
+  font-size: 1.2rem;
+  line-height: 1.72;
+  margin-bottom: 22px;
+}
+
+.access-note {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  border-top: 1px solid rgba(200, 162, 74, 0.32);
+  margin-top: 44px;
+  padding-top: 26px;
+}
+
+.access-note span {
+  color: var(--gold);
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
+.access-note p {
+  color: rgba(245, 239, 230, 0.84);
+  margin: 0;
+}
+
+.access-form {
+  display: grid;
+  gap: 22px;
+  border: 1px solid rgba(200, 162, 74, 0.32);
+  border-radius: 12px;
+  background:
+    linear-gradient(145deg, rgba(26, 23, 18, 0.92), rgba(9, 8, 7, 0.86)),
+    rgba(8, 7, 6, 0.9);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.34);
+  padding: clamp(26px, 3vw, 44px);
+}
+
+.access-profile-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.access-profile-options label {
+  cursor: pointer;
+}
+
+.access-profile-options input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.access-profile-options span {
+  border: 1px solid rgba(200, 162, 74, 0.36);
+  border-radius: 999px;
+  color: rgba(245, 239, 230, 0.82);
+  display: block;
+  font-family: var(--serif-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 14px 18px;
+  text-align: center;
+  text-transform: uppercase;
+  transition:
+    border-color 200ms ease,
+    background 200ms ease,
+    color 200ms ease;
+}
+
+.access-profile-options input:checked + span {
+  background: rgba(200, 162, 74, 0.16);
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.access-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 20px;
+}
+
+.access-form label {
+  color: rgba(245, 239, 230, 0.9);
+  font-family: var(--serif-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.access-form input,
+.access-form textarea {
+  border: 1px solid rgba(200, 162, 74, 0.24);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--warm-white);
+  font-family: var(--serif-elegant);
+  font-size: 1.08rem;
+  margin-top: 10px;
+  padding: 14px 16px;
+}
+
+.access-form input:focus,
+.access-form textarea:focus {
+  border-color: rgba(200, 162, 74, 0.78);
+  box-shadow: 0 0 0 3px rgba(200, 162, 74, 0.12);
+  outline: 0;
+}
+
+.access-form button {
+  justify-self: start;
+  border: 1px solid var(--gold);
+  background: var(--gold);
+  color: #080604;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--serif-display);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  transition:
+    background 220ms ease,
+    color 220ms ease,
+    transform 220ms ease;
+}
+
+.access-form button:hover {
+  background: transparent;
+  color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.access-form small {
+  color: rgba(245, 239, 230, 0.56);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
 .contact-reasons {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -6016,5 +6260,39 @@ textarea {
 
   .producers-hero-quote {
     margin-top: 34px;
+  }
+
+  .access-hero {
+    min-height: auto;
+    padding: 345px 22px 76px;
+  }
+
+  .access-hero h1 {
+    font-size: clamp(3.2rem, 15vw, 4.8rem);
+    line-height: 0.94;
+  }
+
+  .access-hero-copy > p:not(.eyebrow) {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .access-main {
+    grid-template-columns: 1fr;
+    padding: 68px 22px 82px;
+  }
+
+  .access-intro h2 {
+    font-size: clamp(2.7rem, 13vw, 4.1rem);
+  }
+
+  .access-form-grid,
+  .access-profile-options {
+    grid-template-columns: 1fr;
+  }
+
+  .access-form button {
+    justify-content: center;
+    width: 100%;
   }
 }

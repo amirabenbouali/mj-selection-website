@@ -47,7 +47,7 @@ function WineCard({
         {detailLabel && (
           <>
             <div className="wine-commerce-row">
-              <strong>€{wine.price.toFixed(2)}</strong>
+              <strong>{shopCopy.taxIncluded}</strong>
               <span className={wine.available ? 'available' : ''}>
                 {wine.available ? shopCopy.availableNow : shopCopy.requestOnly}
               </span>
